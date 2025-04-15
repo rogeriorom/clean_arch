@@ -36,10 +36,10 @@ import '../../domain/repositories/${module_name}_repository.dart';
 import '../datasources/${module_name}_datasource.dart';
 
 class ${module_camel_case}RepositoryImp implements ${module_camel_case}Repository {
-    ${module_camel_case}Datasource _${module_lower_camel_case}Datasource;
+    final ${module_camel_case}Datasource _${module_lower_camel_case}Datasource;
 
     ${module_camel_case}RepositoryImp({
-        required ${module_camel_case}Datasource ${module_lower_camel_case}Datasource
+        required ${module_camel_case}Datasource ${module_lower_camel_case}Datasource,
     }): _${module_lower_camel_case}Datasource = ${module_lower_camel_case}Datasource;
 }
 EOF
